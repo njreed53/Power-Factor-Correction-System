@@ -7,7 +7,6 @@ Table of Contents
    * [Introduction](#introduction)
    * [Problem Definition](#problem-definition)
    * [Engineering Requirements](#engineering-requirements)
-   * [Engineering Requirements](#engineering-requirements-1)
       * [1. Voltage Measurement Block](#1-voltage-measurement-block)
       * [2. Current Measurement Block](#2-current-measurement-block)
       * [3. MCU Requirements](#3-mcu-requirements)
