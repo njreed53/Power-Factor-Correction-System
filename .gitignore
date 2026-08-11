@@ -1,0 +1,15 @@
+*.elf
+*.hex
+*.bin
+*.o
+*.map
+*.list
+*.swp
+.DS_Store
+Thumbs.db
+build/
+Debug/
+Release/
+.vscode/
+.idea/
+.settings/
