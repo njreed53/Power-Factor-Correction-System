@@ -1,15 +1,22 @@
+# Build artifacts
 *.elf
 *.hex
 *.bin
 *.o
 *.map
 *.list
-*.swp
-.DS_Store
-Thumbs.db
-build/
-Debug/
-Release/
+
+# IDE files
 .vscode/
 .idea/
 .settings/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build directories
+build/
+Debug/
+Release/
