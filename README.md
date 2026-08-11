@@ -48,7 +48,7 @@ Small businesses relying on three-phase power often experience low power factor 
 
 Full requirements specification with 49 technical requirements across all subsystems is available in the documentation:
 
-**[View Complete Requirements Specification](docs/requirements.pdf)**
+**[View Complete Requirements Specification](docs/requirements.md)**
 
 ## Firmware Design and Implementation
 
