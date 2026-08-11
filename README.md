@@ -1,5 +1,6 @@
 # Power-Factor-Correction-System
 > ⚠️ **Safety Notice:** This project involves 120V AC mains voltage. Do not replicate without proper training, equipment, and supervision.`
+![Assembled APFC](images/AssembledAPFC.png)
 
 Table of Contents
 =================
@@ -39,7 +40,7 @@ Full requirements specification with 49 technical requirements across all subsys
 
 ## Firmware Design and Implementation
 
-[Insert code flowchart here]
+![Code Flowchart](images/CodeFlowchart.png)
 
 The firmware for the system is implemented on an STM32-F303K8 microcontroller and handles data acquisition, signal processing, power factor calculation, and capacitor bank control. Source files are located in `/firmware/` repository directory.
 
@@ -57,11 +58,11 @@ A simple moving average filter stabilizes the power factor reading. Protection l
 The control algorithm compares measured power factor to a 0.95 target. If outside the defined deadband, required reactive power compensation is calculated. The controller determines the appropriate capacitor combination using a binary-based relay control scheme.
 
 Relay signals update to adjust the capacitor bank, and system status (voltage, current, power factor) transmits over UART for monitoring. The process repeats continuously.
+
 ## Results
 
 The primary outcome was successful assembly and operation of a single-phase Automatic Power Factor Correction (APFC) prototype. While comprehensive quantitative testing was not completed due to timeline constraints, the system demonstrated core functionality during demonstration and informal testing.
 
----
 ### Qualitative Performance Assessment
 
 During informal testing with an inductive motor load, the following behaviors were observed:
@@ -72,20 +73,33 @@ During informal testing with an inductive motor load, the following behaviors we
 |**System Stability**|Prototype operated continuously without fault conditions or relay chatter|
 |**Display Output**|Terminal displayed correct feedback on system status and capacitor bank configuration|
 
-#### Waveform Captures
-
-_[Insert images here]_
-
-> **Figure 1:** Voltage (top) and Current (bottom) from probing motor directly  
-> **Figure 2:** Voltage waveform after step-down, DC-bias, and RC filter  
-> **Figure 3:** Current waveform after DC-bias and RC filter  
-> **Figure 4:** Terminal output displaying automatic switching and voltage/current/PF readings
-
----
+#### Waveform Captures & Terminal Output
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./images/Figure1.png" width="280" />
+      <br/><b>Figure 1:</b> Voltage (top) and Current (bottom) from probing motor directly
+    </td>
+    <td align="center" width="50%">
+      <img src="./images/Figure2.png" width="280" />
+      <br/><b>Figure 2:</b> Voltage waveform after step-down, DC-bias, and RC filter
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./images/Figure3.png" width="280" />
+      <br/><b>Figure 3:</b> Current waveform after DC-bias and RC filter
+    </td>
+    <td align="center" width="50%">
+      <img src="./images/Figure4.png" width="280" />
+      <br/><b>Figure 4:</b> Terminal output displaying automatic switching and voltage/current/PF readings
+    </td>
+  </tr>
+</table>
 
 ### Limitations and Uncompleted Testing
 
-Comprehensive quantitative testing was limited by project timeline constraints. The following test plans from Section 11 were not fully executed:
+Comprehensive quantitative testing was limited by project timeline constraints. The following test plans were not fully executed:
 
 - Voltage divider ratio verification with calibrated equipment
 - Current measurement accuracy across full 0.5–5 A range
