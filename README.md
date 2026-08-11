@@ -54,6 +54,8 @@ Full requirements specification with 49 technical requirements across all subsys
 
 ![Code Flowchart](images/CodeFlowchart.png)
 
+**[View Main Loop Code](firmware/main.c)**
+
 The firmware for the system is implemented on an STM32-F303K8 microcontroller and handles data acquisition, signal processing, power factor calculation, and capacitor bank control. Source files are located in `/firmware/` repository directory.
 
 At startup, the system initializes all peripherals: ADC with DMA, timers, GPIO pins for relay control, UART for debugging, and I2C for the LCD interface. Once initialized, the ADC starts in DMA mode and continuously collects voltage and current samples triggered by a timer.
