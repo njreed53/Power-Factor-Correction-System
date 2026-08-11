@@ -126,6 +126,6 @@ Comprehensive quantitative testing was limited by project timeline constraints. 
 
 This project is licensed under the MIT License — see [`LICENSE`](LICENSE) file for details.
 
-# Questions?
+## Questions?
 
 Open an issue or reach out directly. Happy to discuss the implementation!
