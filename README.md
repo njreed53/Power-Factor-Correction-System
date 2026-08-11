@@ -1,6 +1,18 @@
 # Power-Factor-Correction-System
 > ⚠️ **Safety Notice:** This project involves 120V AC mains voltage. Do not replicate without proper training, equipment, and supervision.`
-![Assembled APFC](images/AssembledAPFC.png)
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./images/AssembledAPFC.png" width="400" />
+      <br/>Assembled APFC module
+    </td>
+    <td align="center" width="50%">
+      <img src="./images/FullSystemSchematic.png" width="400" />
+      <br/>Full System Schematic
+    </td>
+  </tr>
+</table>
 
 Table of Contents
 =================
